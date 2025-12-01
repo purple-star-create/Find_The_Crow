@@ -8,7 +8,7 @@ $(document).ready(function(){
 		console.log("crow was clicked")
 
 		if($('img.crow').hasClass('etat3') ){
-			window.location.href = 'file:///C:/Users/Alice/Desktop/site_find_the_crow/site_game_page_2.html';
+			window.location.href = 'file:///C:/Users/Alice/Desktop/FIND_THE_CROW/FICHIERS/docs/site_game_page_2.html';
 		}
 
 		if($('img.crow').hasClass('etat2') ){

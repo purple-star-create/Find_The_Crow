@@ -203,6 +203,12 @@ h2{
 
 /* DECOR */
 
+.mobile_background{
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+
 .forest{
   width: 100vw;
   height: 100vh;
@@ -447,4 +453,219 @@ h2{
   transform: rotateY(180deg);
   opacity: 80%;
   z-index: 1;
+}
+
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
+
+@media screen and (max-width: 730px){
+
+  .skull{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    filter: drop-shadow(black 1rem 1rem 10px);
+    width: 70px;
+  }
+
+  h2{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .mobile_background{
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .forest{
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+    /* ANIMALS */
+
+  .owl{
+    width: 8%;
+    position: absolute;
+    top: 65px;
+    right: 40px;
+    opacity: 80%;
+  }
+
+  .fox{
+    width: 40%;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    transform: rotateY(180deg);
+    opacity: 80%;
+  }
+
+  .badger{
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    opacity: 80%;
+  }
+
+  .snake{
+    width: 20%;
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    opacity: 80%;
+  }
+
+  /* CROW */
+
+  .crow.etat1{
+    width: 50px;
+    position: absolute;
+    top: 380px;
+    right: 60px;
+  }
+
+  .crow.etat2{
+    width: 30px;
+    position: absolute;
+    top: 480px;
+    left: 20px;
+  }
+
+  .crow.etat3{
+    width: 25px;
+    position: absolute;
+    top: 355px;
+    left: 240px;
+    transform: rotateY(180deg);
+  }
+
+  .crow.etat4{
+    width: 30px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    transform: rotateY(180deg);
+    opacity: 80%;
+    z-index: 1;
+  }
+
+  .menhir{
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    width: 25%;
+    transform: rotateY(180deg);
+  }
+
+  .tree{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+  }
+
+  /* LEAVES */
+
+  .leaf1{
+    width: 7%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    opacity: 50%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf2{
+    width: 15%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    opacity: 70%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf3{
+    width: 18%;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    opacity: 70%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf4{
+    width: 11%;
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    opacity: 70%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf5{
+    width: 15%;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    opacity: 80%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf6{
+    width: 9%;
+    position: absolute;
+    top: 550px;
+    right: 400px;
+    opacity: 80%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf7{
+    width: 7%;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    opacity: 80%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf8{
+    width: 20%;
+    position: absolute;
+    top: 497px;
+    left: 30px;
+    opacity: 80%;
+    z-index: 1;
+  }
+
+
+  .leaf9{
+    width: 12%;
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    opacity: 80%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+  .leaf10{
+    width: 10%;
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    opacity: 70%;
+    transition: opacity 0.6s ease, transform 0.4s ease;
+  }
+
+
 }

@@ -202,6 +202,10 @@ h2{
 
 /* ELEMENTS DE DECOR */
 
+.mobile_background{
+  opacity: 0;
+}
+
 .background{
   width: 100vw;
   height: 100vh;
@@ -284,4 +288,116 @@ h2{
   transform: scaleX(-1.0); ;
   bottom:100px;
   right: 300px;
+}
+
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
+
+@media screen and (max-width: 730px){
+
+  .skull{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    filter: drop-shadow(black 1rem 1rem 10px);
+    width: 70px;
+  }
+
+  h2{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .mobile_background{
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .background{
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+  .stone1{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 15%;
+    z-index: 2;
+  }
+
+  .stone2{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .church{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .owl{
+    width: 10%;
+    position: absolute;
+    right: 30px;
+    top: 350px;
+  }
+
+  .babyowl{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .fox{
+    width: 30%;
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+    opacity: 70%;
+  }
+
+  /* CROW */
+
+  .crow.etat1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    z-index: 1;
+
+  }
+
+  .crow.etat2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+  }
+
+  .crow.etat3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: scaleX(-1.0); ;
+    top: 170px;
+    left: 30px;
+  }
+
+
+
 }

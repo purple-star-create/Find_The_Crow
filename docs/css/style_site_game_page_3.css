@@ -211,6 +211,12 @@ h2{
 
  /* BACKGROUND */
 
+.mobile_background{
+  opacity: 0;
+  width: 0px;
+  height: 0Px;
+}
+
 .gargoyle1{
   position: absolute;
   top: 50px;
@@ -299,3 +305,130 @@ h2{
   
 }
 
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
+
+@media screen and (max-width: 730px){
+
+  .skull{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    filter: drop-shadow(black 1rem 1rem 10px);
+    width: 70px;
+  }
+
+  h2{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .mobile_background{
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .background{
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+  .gargoyle1{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 20%;
+  }
+
+  .gargoyle2{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 20%;
+  }
+
+  .gargoyle3{
+    position: absolute;
+    width: 10%;
+    top: 210px;
+    left: 0px;
+    transform: rotateY(180deg);
+    width: 20%;
+  }
+
+  .gargoyle4{
+    position: absolute;
+    width: 25%;
+    top: 250px;
+    left: 110px;
+    transform: rotate(-3deg);
+    width: 30%;
+  }
+
+  .gargoyle5{
+   width: 12%;
+   position: absolute;
+   top: 150px;
+   left: 110px;
+   width: 30%;
+  }
+
+  .gargoyle6{
+    width: 17%;
+    position: absolute;
+    top: 350px;
+    left: 110px;
+    width: 30%;
+  }
+
+  .badger{
+    z-index: 1;
+    position: absolute;
+    top: 520px;
+    right: 40px;
+    transform: rotateY(180deg);
+    width: 50%;
+  }
+
+  /* CROW */ 
+
+  .crow.etat1{
+    width: 15%;
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    z-index: 1;
+
+  }
+
+  .crow.etat2{
+    width: 10%;
+    position: absolute;
+    top: 267px;
+    left: 205px;
+    z-index: 1;
+  }
+
+  .crow.etat3{
+    width: 30%;
+    position: absolute;
+    top: 48px;
+    right: 50px;
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+
+  .crow.etat4{
+    width: 10%;
+    position: absolute;
+    top: 78px;
+    left: 75px;
+  }
+}

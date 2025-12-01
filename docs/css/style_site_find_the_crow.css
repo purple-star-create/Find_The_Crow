@@ -83,12 +83,6 @@ h1, h2, h3, h4, h5{
 /* Design général
 /* ----------------------------- */
 
-/* CURSOR */
-
-body {
-      cursor: url('cursor_1.png'), auto;
-}
-
 @font-face {
     font-family: 'Fiddums Family';
     src: url('FiddumsFamilyFont.woff') format('woff');
@@ -101,15 +95,13 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     margin-bottom: 40px;
-    line-height: 1.3;
     white-space: nowrap;
     padding-bottom: 5px;
 }
 
 body{
 	font-family: 'Fiddums Family','Helvetica', Arial, sans-serif;
-	font-size: 9rem; /* 1.6rem = 16px dans notre cas */
-	line-height: 1.2;
+	font-size: 6rem; /* 1.6rem = 16px dans notre cas */
 }
 
 header{
@@ -135,15 +127,14 @@ header{
   filter: invert(100%);
 }
 
-main .grave{
-  display: block;
+.grave{
   position: absolute;
-  top: 32%;
+  bottom: 0px;
   z-index: 2;
   max-width: 100%;
 }
 
-main .ghost{
+.ghost{
   width: 10%;
   position: absolute;
   top: 4rem;
@@ -151,17 +142,84 @@ main .ghost{
   z-index: 3;
 }
 
-main .statue{
-  width: 16%;
+.statue{
   position: absolute;
-  top: 10rem;
-  left: 14rem;
+  bottom: 0px;
+  left: 150px;
+  width: 16%;
   z-index: 1;
 }
 
-main .cemeterytree{
+.mobile_background{
+  opacity: 0;
+}
+
+.cemeterytree{
   position: absolute;
   top: 0px;
+  height: 100%;
   z-index: -1;
   opacity: 60%;
+}
+
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
+
+@media screen and (max-width: 730px){
+
+  header{
+    display: flex;
+    padding-top: 16rem;
+    padding-left: 5rem;
+    font-size: 5rem;
+    z-index: 0;
+  }
+
+  .mobile_background{
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .font-container {
+    white-space: normal;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+  }
+
+  .crow{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 47%;
+    left: 100px;
+    transform: scaleX(-1.0);
+    z-index: 3;
+  }
+
+  .crow:hover{
+    filter: invert(100%);
+  }
+
+  .ghost{
+    width: 25%;
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    z-index: 3;
+  }
+
+  .statue{
+    width: 50%;
+    z-index: 1;
+  }
+
+  .cemeterytree{
+    opacity: 0;
+  }
+
 }

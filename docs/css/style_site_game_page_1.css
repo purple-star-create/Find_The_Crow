@@ -130,7 +130,7 @@ body{
   height: 100%; /* 100% Full-height */
   width: 0;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #e8e8e8; /* Light grey*/
@@ -205,9 +205,7 @@ h2{
 .fond{
   position: absolute;
   top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
 }
 
@@ -252,14 +250,18 @@ h2{
   width: 6%;
 }
 
+.mobile_background{
+  opacity: 0
+}
+
 /* CROW */
 
 .crow.etat1{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  right: 108px;
-  top: 175px;
+  left: 10px;
+  bottom: 75px;
   z-index: 1;
 }
 
@@ -279,4 +281,116 @@ h2{
   left: 200px;
   top: 212px;
   z-index: 1;
+}
+
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
+
+@media screen and (max-width: 730px){
+
+  .skull{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    filter: drop-shadow(black 1rem 1rem 10px);
+    width: 70px;
+  }
+
+  h2{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .sign{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 50%;
+    transform: rotate(2deg);
+  }
+  
+  .mobile_background{
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .fond{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .stone{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .stone2{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .statue{
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .statueange{
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .montparnasse{
+    position: absolute;
+    top: 75px;
+    left: 120px;
+    width: 20%;
+    z-index: 0;
+  }
+
+  /* CROW */
+
+  .crow.etat1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    top: 80%;
+    z-index: 1;
+  }
+
+  .crow.etat2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 170px;
+    top: 340px;
+    transform: scaleX(-1.0);
+    z-index: 1;
+  }
+
+  .crow.etat3{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 110px;
+    z-index: 1;
+  }
+
+
+
 }
