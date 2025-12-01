@@ -396,6 +396,7 @@ h2{
     transform: scaleX(-1.0); ;
     top: 170px;
     left: 30px;
+    z-index: 2;
   }
 
 
