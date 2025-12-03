@@ -91,6 +91,14 @@ h1, h2, h3, h4, h5{
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'IM FELL Regular';
+    src: url('../fonts/IM_FELL_DW_Pica_Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .font-container {
     overflow-x: auto;
     overflow-y: hidden;
@@ -100,7 +108,7 @@ h1, h2, h3, h4, h5{
 }
 
 body{
-	font-family: 'Fiddums Family','Helvetica', Arial, sans-serif;
+	font-family: 'IM FELL Regular';
 	font-size: 6rem; /* 1.6rem = 16px dans notre cas */
 }
 
@@ -172,7 +180,8 @@ header{
     display: flex;
     padding-top: 16rem;
     padding-left: 5rem;
-    font-size: 5rem;
+    padding-right: 5rem;
+    font-size: 3rem;
     z-index: 0;
   }
 
