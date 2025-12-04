@@ -331,7 +331,6 @@ h2{
   z-index: 1;
 }
 
-
 .leaf9{
   width: 5%;
   position: absolute;
@@ -391,7 +390,7 @@ h2{
 .fox{
   width: 20%;
   position: absolute;
-  bottom: -15px;
+  bottom: 0px;
   right: 20px;
   transform: rotateY(180deg);
   opacity: 80%;
@@ -478,8 +477,8 @@ h2{
   .mobile_background{
     position: absolute;
     top: 0px;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     opacity: 1;
     z-index: -1;
   }

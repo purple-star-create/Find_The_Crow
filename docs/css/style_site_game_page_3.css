@@ -234,7 +234,7 @@ h2{
 .gargoyle3{
   position: absolute;
   width: 10%;
-  bottom: -210px;
+  bottom: 0px;
   left: 0px;
   transform: rotateY(180deg);
 }
@@ -264,7 +264,7 @@ h2{
 .badger{
   z-index: 1;
   position: absolute;
-  top: 850px;
+  bottom: 0px;
   right: 200px;
   transform: rotateY(180deg);
 }
@@ -277,7 +277,6 @@ h2{
   top: 785px;
   right: 325px;
   z-index: 1;
-
 }
 
 .crow.etat2{
@@ -302,7 +301,6 @@ h2{
   position: absolute;
   top: 780px;
   left: 475px;
-  
 }
 
 /* ----------------------------- */
@@ -328,8 +326,8 @@ h2{
   .mobile_background{
     position: absolute;
     top: 0px;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     opacity: 1;
     z-index: -1;
   }
@@ -391,7 +389,7 @@ h2{
   .badger{
     z-index: 1;
     position: absolute;
-    top: 520px;
+    bottom: 0px;
     right: 40px;
     transform: rotateY(180deg);
     width: 50%;
